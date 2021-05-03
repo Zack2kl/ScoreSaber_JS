@@ -8,7 +8,7 @@
 // @grant        none
 // ==/UserScript==
 
-(function() {
+function main() {
     var IDs = JSON.parse( localStorage.getItem('IDs') || '{}' )
 
     var navbar = document.getElementsByClassName('has-navbar-fixed-top')[0];
@@ -88,7 +88,13 @@
     }
 
     Object.keys(IDs).forEach(addButton)
-})();
+};
+
+try{
+    main()
+} catch (e) {
+    console.log(e)
+}
 
 
 /*
