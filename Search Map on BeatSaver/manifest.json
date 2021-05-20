@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+
+	"name": "ScoreSaber Map Search",
+	"description": "",
+	"version": "1.0",
+
+	"permissions": ["https://scoresaber.com/leaderboard/*", "https://beatsaver.com/search?auto_open=1*"],
+	"content_scripts": [{
+			"matches": ["https://scoresaber.com/leaderboard/*", "https://beatsaver.com/search?auto_open=1*"],
+			"js": ["index.js"]
+		}
+	]
+}
