@@ -14,7 +14,7 @@ function OnScoreSaber() {
     }
 
     AutoOpen.innerText = 'Go to Download Page';
-    AutoOpen.onclick = () => window.open(`https://beatsaver.com/search?auto_open=1&q=${encodeURI(mapId)}`);
+    AutoOpen.onclick = () => window.open(`https://beatsaver.com/search?auto_open=1&q=${mapId}`);
     tElement.insertBefore(AutoOpen, tElement.Node);
 }
 
